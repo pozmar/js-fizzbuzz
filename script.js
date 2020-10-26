@@ -1,15 +1,16 @@
 
+var numUl = document.getElementById("lista");
 for (var i = 1; i <= 100; i++){
-  if(i % 3 == 0 && i % 5 == 0){
-    document.writeln("FizzBuzz");
+  if(i % 3 == 0 && i % 5 === 0){
+    numUl.innerHTML += "<li>" + "FizzBuzz" + "</li>";
   }
-  else if (i % 5 == 0){
-    document.writeln("Buzz");
+  else if (i % 5 === 0){
+    numUl.innerHTML += "<li>" + "Buzz" + "</li>";
   }
-  else if (i % 3 == 0){
-    document.writeln("Fizz");
+  else if (i % 3 === 0){
+    numUl.innerHTML += "<li>" + "Fizz" + "</li>";
   }
   else{
-    document.writeln(i);
+    numUl.innerHTML += "<li>" + i + "</li>";
   }
 }
